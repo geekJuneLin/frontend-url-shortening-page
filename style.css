@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap");
+
+/* general */
+
+body {
+  margin: 0;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(255, 11%, 22%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  color: hsl(0, 0%, 75%);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* header */
+
+.nav {
+  padding: 4% 6%;
+}
+
+.nav-brand {
+  float: left;
+  padding-top: 10px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.navbar-items-left,
+.navbar-items-right {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: hsl(0, 0%, 75%);
+}
+
+.navbar-items-left {
+  float: left;
+  list-style: none;
+}
+
+.navbar-items-right {
+  float: right;
+}
+
+.sign-up {
+  padding: 4px 8px;
+  border-radius: 25px;
+  background-color: hsl(180, 66%, 49%);
+  color: #fff;
+}
+
+.navbar-item {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+hr {
+  display: none;
+}
+
+/* intro */
+
+.intro {
+  padding: 4% 6%;
+}
+
+.intro-box {
+  display: flex;
+}
+
+.intro-item {
+  flex: 50%;
+}
+
+.intro-item h1 {
+  width: 70%;
+  line-height: 1.25;
+  margin-bottom: 0;
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.intro-item p {
+  width: 70%;
+  line-height: 2;
+  padding-bottom: 1rem;
+}
+
+.started-btn {
+  padding: 8px 4px;
+  border-radius: 25px;
+  text-align: center;
+  width: 140px;
+  color: #fff;
+  background-color: hsl(180, 66%, 49%);
+}
+
+@media only screen and (max-width: 750px) {
+  .menu-btn {
+    display: block;
+    margin-top: 12px;
+    float: right;
+  }
+
+  .navbar {
+    display: none;
+    padding: 1rem 0;
+    border-radius: 8px;
+    margin-top: 3.725rem;
+    width: 100%;
+    text-align: center;
+    background-color: hsl(257, 27%, 26%);
+  }
+
+  .navbar.fade {
+    display: block;
+  }
+
+  .navbar-items-left,
+  .navbar-items-right {
+    color: #fff;
+    padding: 0;
+    display: block;
+    float: none;
+  }
+
+  .navbar-item {
+    display: block;
+    margin: 12px 0;
+  }
+
+  hr {
+    display: block;
+    margin: 0 1rem;
+  }
+
+  .navbar-item.sign-up {
+    padding: 0.5rem 0;
+    width: 82.5%;
+    margin: 0 auto;
+  }
+}
