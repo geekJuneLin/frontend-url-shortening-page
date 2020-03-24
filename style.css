@@ -3,8 +3,8 @@
 /* general */
 
 body {
-  margin: 0;
-  font-size: 18px;
+    margin: 0;
+    font-size: 18px;
 }
 
 h1,
@@ -13,143 +13,255 @@ h3,
 h4,
 h5,
 h6 {
-  color: hsl(255, 11%, 22%);
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
+    color: hsl(255, 11%, 22%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
 }
 
 p {
-  color: hsl(0, 0%, 75%);
-  font-size: 18px;
-  font-family: "Poppins", sans-serif;
+    color: hsl(0, 0%, 75%);
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
 }
+
+.btn {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 25px;
+    background-color: hsl(180, 66%, 49%);
+    color: #fff;
+}
+
 
 /* header */
 
 .nav {
-  padding: 4% 6%;
+    padding: 4% 8%;
 }
 
 .nav-brand {
-  float: left;
-  padding-top: 10px;
+    float: left;
+    padding-top: 14px;
 }
 
 .menu-btn {
-  display: none;
+    display: none;
 }
 
 .navbar-items-left,
 .navbar-items-right {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: hsl(0, 0%, 75%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: hsl(0, 0%, 75%);
 }
 
 .navbar-items-left {
-  float: left;
-  list-style: none;
+    float: left;
+    list-style: none;
 }
 
 .navbar-items-right {
-  float: right;
-}
-
-.sign-up {
-  padding: 4px 8px;
-  border-radius: 25px;
-  background-color: hsl(180, 66%, 49%);
-  color: #fff;
+    float: right;
+    padding-bottom: 4px;
 }
 
 .navbar-item {
-  display: inline-block;
-  margin: 0 12px;
+    display: inline-block;
+    margin: 0 12px;
 }
 
 hr {
-  display: none;
+    display: none;
 }
+
 
 /* intro */
 
 .intro {
-  padding: 4% 6%;
+    padding-left: 8%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-wrap: wrap-reverse;
 }
 
-.intro-box {
-  display: flex;
+.intro-text {
+    padding-top: 2.5em;
 }
 
-.intro-item {
-  flex: 50%;
+.intro-text h1 {
+    width: 380px;
+    font-size: 3rem;
+    margin-bottom: 0;
 }
 
-.intro-item h1 {
-  width: 70%;
-  line-height: 1.25;
-  margin-bottom: 0;
-  font-size: 52px;
-  font-weight: 700;
+.intro-text p {
+    width: 440px;
+    margin-top: 0;
 }
 
-.intro-item p {
-  width: 70%;
-  line-height: 2;
-  padding-bottom: 1rem;
+.intro-text .btn {
+    padding: 0.5em 1.5em;
 }
 
-.started-btn {
-  padding: 8px 4px;
-  border-radius: 25px;
-  text-align: center;
-  width: 140px;
-  color: #fff;
-  background-color: hsl(180, 66%, 49%);
+.intro-img {
+    padding-top: 2em;
+}
+
+
+/* stats */
+
+.stats {
+    margin-top: 8em;
+    padding-bottom: 10em;
+    background-color: hsl(0, 0%, 95%);
+}
+
+form {
+    background-image: url("images/bg-shorten-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 8px;
+    top: -85px;
+    margin: 0 8%;
+    padding: 2.5em 6em;
+    background-color: hsl(257, 27%, 26%);
+}
+
+.stats-input {
+    display: inline-block;
+    width: 70%;
+}
+
+.stats-input input {
+    width: 100%;
+    padding: 1.5em 0;
+    border-radius: 8px;
+}
+
+form button {
+    margin-left: 2.5em;
+}
+
+.stats-context {
+    padding: 2.5em 8%;
+    text-align: center;
+}
+
+.stats-context p {
+    width: 32%;
+    margin: 0 auto;
+}
+
+.stats-card-row {
+    position: relative;
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dash-line {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 50%;
+    height: 15px;
+    background-color: hsl(180, 66%, 49%);
+}
+
+.stats-card-item {
+    padding: 0 0 3em 2em;
+    z-index: 1;
+    max-width: 30%;
+    text-align: start;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.stats-card-item p {
+    width: 70%;
+    margin: 0;
+}
+
+.stats-card-item img {
+    padding: 0.9em;
+    border-radius: 50%;
+    background-color: hsl(257, 27%, 26%);
+    position: relative;
+    top: -1.7em;
+}
+
+.card-2,
+.card-3 {
+    position: relative;
+}
+
+.card-2 {
+    top: 2.5em;
+}
+
+.card-3 {
+    top: 5em;
+}
+
+
+/* started section */
+
+.started-section {
+    background-image: url("images/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 27%, 26%);
+    text-align: center;
+    padding: 5% 0;
+}
+
+.started-section h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.started-section .btn {
+    padding: 0.5em 1.5em;
 }
 
 @media only screen and (max-width: 750px) {
-  .menu-btn {
-    display: block;
-    margin-top: 12px;
-    float: right;
-  }
-
-  .navbar {
-    display: none;
-    padding: 1rem 0;
-    border-radius: 8px;
-    margin-top: 3.725rem;
-    width: 100%;
-    text-align: center;
-    background-color: hsl(257, 27%, 26%);
-  }
-
-  .navbar.fade {
-    display: block;
-  }
-
-  .navbar-items-left,
-  .navbar-items-right {
-    color: #fff;
-    padding: 0;
-    display: block;
-    float: none;
-  }
-
-  .navbar-item {
-    display: block;
-    margin: 12px 0;
-  }
-
-  hr {
-    display: block;
-    margin: 0 1rem;
-  }
-
-  .navbar-item.sign-up {
-    padding: 0.5rem 0;
-    width: 82.5%;
-    margin: 0 auto;
-  }
+    .menu-btn {
+        display: block;
+        margin-top: 12px;
+        float: right;
+    }
+    .navbar {
+        display: none;
+        padding: 1rem 0;
+        border-radius: 8px;
+        margin-top: 3.725rem;
+        width: 100%;
+        text-align: center;
+        background-color: hsl(257, 27%, 26%);
+    }
+    .navbar.fade {
+        display: block;
+    }
+    .navbar-items-left,
+    .navbar-items-right {
+        color: #fff;
+        padding: 0;
+        display: block;
+        float: none;
+    }
+    .navbar-item {
+        display: block;
+        margin: 12px 0;
+    }
+    hr {
+        display: block;
+        margin: 0 1rem;
+    }
+    .navbar-item.sign-up {
+        padding: 0.5rem 0;
+        width: 82.5%;
+        margin: 0 auto;
+    }
 }
