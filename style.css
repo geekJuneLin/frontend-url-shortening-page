@@ -95,6 +95,7 @@ p {
 }
 
 hr {
+    height: 0;
     display: none;
 }
 
@@ -417,6 +418,10 @@ footer ul {
 }
 
 @media only screen and (max-width: 414px) {
+    .navbar-item.btn,
+    hr {
+        margin: 0 1.25em;
+    }
     .intro {
         width: 100%;
         padding: 0;
